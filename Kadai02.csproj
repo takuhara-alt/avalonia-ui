@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace>Kadai02</RootNamespace>
+    <AssemblyName>Kadai02</AssemblyName>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+  <PackageReference Include="Avalonia" Version="11.0.6" />
+  <PackageReference Include="Avalonia.Desktop" Version="11.0.6" />
+  <PackageReference Include="Avalonia.ReactiveUI" Version="11.0.6" />
+  <PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.6" /> 
+</ItemGroup>
+
+</Project>

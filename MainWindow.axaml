@@ -1,0 +1,31 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="Kadai02.MainWindow"
+        Title="おみくじ"
+        Width="400" Height="300">
+
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="10">
+        <TextBlock Text="おみくじを引いてみよう！" FontSize="20" HorizontalAlignment="Center"/>
+
+        <!-- Gridで左右に画像を配置 -->
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- 左側の画像 -->
+            <Image Name="leftImage" Grid.Column="0" Margin="10" Width="150" Height="150" IsVisible="True"/>
+
+            <!-- おみくじ結果画像 -->
+            <Image Name="ResultImage" Grid.Column="1" Margin="10" Width="150" Height="150" IsVisible="True"/>
+
+            <!-- 右側の画像 -->
+            <Image Name="rightImage" Grid.Column="2" Margin="10" Width="150" Height="150" IsVisible="True"/>
+        </Grid>
+
+        <!-- ボタン -->
+        <Button Name="OmikujiButton" Content="おみくじを引く" Width="130" Height="30" Click="OmikujiButton_Click" HorizontalAlignment="Center" />
+    </StackPanel>
+</Window>
